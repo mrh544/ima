@@ -1,0 +1,257 @@
+@import url('http://db.onlinewebfonts.com/c/2a2b767302dad0d292294c13d63a0c5f?family=DIN2014-Regular');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+html, body {
+  font-family: "DIN2014-Regular";
+  color: #222222;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: #417266;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+header {
+  background-color: #78B4A3;
+  color: #ffffff;
+  height: 500px;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px 20px 100px;
+}
+
+header nav .logo h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 2.25px;
+}
+
+header nav .links {
+  float: right;
+}
+
+header nav .geo-icon, header nav .cart-icon {
+  margin-right: 40px;
+}
+
+header .cover {
+  display: flex;
+  justify-content: center;
+}
+
+header .cover .copy {
+  padding-top: 120px;
+  padding-left: 140px;
+}
+
+header .cover .copy h1 {
+  padding-bottom: 20px;
+}
+
+main .steps {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+main .steps h2 {
+  text-transform: uppercase;
+}
+
+main .steps .step {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+main .steps .step article {
+  position: relative;
+  line-height: 30px;
+  width: 30%;
+}
+
+main .steps .step .overlay, main .steps .step article img {
+  margin-left: 30px;
+}
+
+main .steps .step .overlay {
+  position: absolute;
+  z-index: 1;
+  width: 350px;
+  height: 286px;
+  top: 0px;
+  left: 0px;
+  background-color: #78B4A3;
+  opacity: 0.5;
+}
+
+main .steps .step .map-image {
+  position: relative;
+  width: 350px;
+  height: 286px;
+}
+
+main .steps .step button {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  z-index: 99;
+}
+
+main .steps .step aside {
+  line-height: 30px;
+  width: 30%;
+}
+
+main .steps .step aside img {
+  margin-left: 50px;
+}
+
+main .shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #eeeeee;
+  height: 100%;
+  width: 100%;
+}
+
+main .shop figure {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+main .contact {
+  padding: 40px;
+  background-color: #E5E5E5;
+  height: 100%;
+  width: 100%;
+}
+
+main .contact h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+main .contact .input-area {
+  display: flex;
+  justify-content: center;
+}
+
+main .contact input {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  outline: 0;
+  width: 300px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #78B4A3;
+  color: #ffffff;
+  padding: 40px;
+}
+
+/* small sizes */
+@media only screen and (max-width: 800px) {
+  header .cover .copy {
+    padding-top: 80px;
+  }
+
+  header .cover .art {
+    display: none;
+  }
+
+  main .steps {
+    text-align: center;
+  }
+
+  main .overlay {
+    display: none;
+  }
+
+  main .steps .step {
+    flex-direction: column;
+  }
+
+  main .steps .step article {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  main .steps .step aside {
+      width: 100%;
+  }
+
+  main .steps .step .map {
+    display: none;
+  }
+
+  main .shop figure:not(:first-child) {
+    display: none;
+  }
+}
+
+/* medium sizes */
+@media only screen and (min-width : 800px) and (max-width: 1048px) {
+  header .cover .art {
+    display: none;
+  }
+
+  main .shop figure:not(:first-child) {
+    display: none;
+  }
+
+  main .steps .step .overlay, main .steps .step article img {
+    margin-left: 0px;
+  }
+
+  main .steps .step article button {
+    right: 20px;
+  }
+
+  main .steps .step aside {
+    margin-left: 150px;
+  }
+}
+
+/* large sizes */
+@media only screen and (min-width : 1048px) and (max-width : 1200px) {
+}

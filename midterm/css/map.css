@@ -1,0 +1,136 @@
+@import url('http://db.onlinewebfonts.com/c/2a2b767302dad0d292294c13d63a0c5f?family=DIN2014-Regular');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+html, body {
+  font-family: "DIN2014-Regular";
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  color: #222222;
+  height: 150px;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px 20px 100px;
+}
+
+header nav .logo h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 2.25px;
+}
+
+header nav .links {
+  float: right;
+}
+
+header nav .geo-icon, header nav .cart-icon {
+  margin-right: 40px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+main .map {
+  width: 525px;
+}
+
+main article {
+  position: relative;
+}
+
+main article .geo-pick {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+main article .hub-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #ffffff;
+  color: #222222;
+  font-weight: bold;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+main article .hub-icon.active {
+  background-color: #78B4A3;
+  color: #ffffff;
+}
+
+main aside {
+  margin-left: 50px;
+  width: 500px;
+}
+
+main aside .tab {
+  cursor: pointer;
+  background-color: #eeeeee;
+  width: 320px;
+  height: 50px;
+  margin: 20px;
+  padding: 10px;
+}
+
+main aside .tab.active {
+  background-color: #78B4A3;
+  color: #ffffff;
+}
+
+main aside .tab h3 {
+  padding: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+main aside .tab p {
+  float: right;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #78B4A3;
+  color: #ffffff;
+  padding: 40px;
+}
+
+
+/* small sizes */
+@media only screen and (max-width: 850px) {
+  main aside {
+    display: none;
+  }
+}
