@@ -1,25 +1,27 @@
 const app = {
 
+  // default color
+  pickedColor : 'white',
+
   initialize: function()
   {
-    $('move-left').click(function() {
-      app.moveCube('left');
-    });
-
-    $('move-right').click(function() {
-      app.moveCube('right');
-    });
-
     $('#submit').click(function () {
       var colorName = $('#color-name').val();
+      app.pickedColor = colorName;
+
       app.getHexFor(colorName);
     });
-  },
 
-  // toggle css animation to move cube
-  moveCube: function(direction)
-  {
+    $('#set-background').click(function () {
+      var colorName = $('#color-name').val();
+      app.pickedColor = colorName;
 
+      app.setBackgroundColor();
+    });
+
+    $('#clear').click(function () {
+      app.clear();
+    });
   },
 
   getHexFor: function(colorName)
@@ -39,6 +41,18 @@ const app = {
         console.log(error)
       }
     });
+  },
+
+  setBackgroundColor: function()
+  {
+    $('body').css('background-color', app.pickedColor);
   }
+
+  clear: function()
+  {
+    app.pickedColor = 'white';
+    $('body').css('background-color', 'white');
+    $('#description').html('');
+  },
 
 }
