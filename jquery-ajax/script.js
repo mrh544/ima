@@ -46,13 +46,13 @@ const app = {
   setBackgroundColor: function()
   {
     $('body').css('background-color', app.pickedColor);
-  }
+  },
 
   clear: function()
   {
     app.pickedColor = 'white';
     $('body').css('background-color', 'white');
     $('#description').html('');
-  },
+  }
 
 }
