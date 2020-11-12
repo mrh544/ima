@@ -1,3 +1,7 @@
+body {
+  text-align: center;
+}
+
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
@@ -9,4 +13,7 @@ p {
 
 .summary {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px;
 }

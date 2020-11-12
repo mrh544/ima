@@ -24,7 +24,7 @@ const app = {
     const summary = response.results[0].summary_short;
 
     $('#output').html('Title: ' +title + '<br />' + 'Author: ' + author + '<br /> '+ 		'Summary: ' + summary);
-    $('#output').addClass('.summary');
+    $('#output').addClass('summary');
   },
 
   noMoviesFound: function() {
